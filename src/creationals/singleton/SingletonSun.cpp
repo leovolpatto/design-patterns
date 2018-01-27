@@ -4,7 +4,7 @@
 static SingletonSun* instance = NULL;
 
 SingletonSun::SingletonSun() {
-    std::cout<<"This lonely sun will always be the same";
+    std::cout<<"This lonely sun will always be the same, it always will have the same instance";
 }
 
 SingletonSun::SingletonSun(const SingletonSun& orig) {

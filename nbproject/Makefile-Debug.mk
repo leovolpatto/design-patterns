@@ -36,6 +36,11 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/main.o \
+	${OBJECTDIR}/src/creationals/factory/AbstractCoffee.o \
+	${OBJECTDIR}/src/creationals/factory/CoffeeMachine.o \
+	${OBJECTDIR}/src/creationals/factory/SugarLessCoffee.o \
+	${OBJECTDIR}/src/creationals/factory/SweetCoffee.o \
+	${OBJECTDIR}/src/creationals/factory/merda.o \
 	${OBJECTDIR}/src/creationals/singleton/SingletonSun.o
 
 
@@ -67,6 +72,31 @@ ${OBJECTDIR}/main.o: main.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -Isrc/creationals/singleton -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
+
+${OBJECTDIR}/src/creationals/factory/AbstractCoffee.o: src/creationals/factory/AbstractCoffee.cpp
+	${MKDIR} -p ${OBJECTDIR}/src/creationals/factory
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -Isrc/creationals/singleton -Isrc/creationals -Isrc/creationals/singleton -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/creationals/factory/AbstractCoffee.o src/creationals/factory/AbstractCoffee.cpp
+
+${OBJECTDIR}/src/creationals/factory/CoffeeMachine.o: src/creationals/factory/CoffeeMachine.cpp
+	${MKDIR} -p ${OBJECTDIR}/src/creationals/factory
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -Isrc/creationals/singleton -Isrc/creationals -Isrc/creationals/singleton -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/creationals/factory/CoffeeMachine.o src/creationals/factory/CoffeeMachine.cpp
+
+${OBJECTDIR}/src/creationals/factory/SugarLessCoffee.o: src/creationals/factory/SugarLessCoffee.cpp
+	${MKDIR} -p ${OBJECTDIR}/src/creationals/factory
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -Isrc/creationals/singleton -Isrc/creationals -Isrc/creationals/singleton -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/creationals/factory/SugarLessCoffee.o src/creationals/factory/SugarLessCoffee.cpp
+
+${OBJECTDIR}/src/creationals/factory/SweetCoffee.o: src/creationals/factory/SweetCoffee.cpp
+	${MKDIR} -p ${OBJECTDIR}/src/creationals/factory
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -Isrc/creationals/singleton -Isrc/creationals -Isrc/creationals/singleton -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/creationals/factory/SweetCoffee.o src/creationals/factory/SweetCoffee.cpp
+
+${OBJECTDIR}/src/creationals/factory/merda.o: src/creationals/factory/merda.cpp
+	${MKDIR} -p ${OBJECTDIR}/src/creationals/factory
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -Isrc/creationals/singleton -Isrc/creationals -Isrc/creationals/singleton -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/creationals/factory/merda.o src/creationals/factory/merda.cpp
 
 ${OBJECTDIR}/src/creationals/singleton/SingletonSun.o: src/creationals/singleton/SingletonSun.cpp
 	${MKDIR} -p ${OBJECTDIR}/src/creationals/singleton
