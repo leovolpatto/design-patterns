@@ -10,11 +10,11 @@ public:
 
         AbstractCoffee* coffee = NULL;
 
-        if (option == "sugar")
-            coffee = new SweetCoffee();
-
         if (option == "no sugar")
             coffee = new SugarLessCoffee();
+
+        if (option == "sugar")
+            coffee = new SweetCoffee();
 
         return coffee;
     }

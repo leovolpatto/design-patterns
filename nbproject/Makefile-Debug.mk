@@ -40,7 +40,6 @@ OBJECTFILES= \
 	${OBJECTDIR}/src/creationals/factory/CoffeeMachine.o \
 	${OBJECTDIR}/src/creationals/factory/SugarLessCoffee.o \
 	${OBJECTDIR}/src/creationals/factory/SweetCoffee.o \
-	${OBJECTDIR}/src/creationals/factory/merda.o \
 	${OBJECTDIR}/src/creationals/singleton/SingletonSun.o
 
 
@@ -92,11 +91,6 @@ ${OBJECTDIR}/src/creationals/factory/SweetCoffee.o: src/creationals/factory/Swee
 	${MKDIR} -p ${OBJECTDIR}/src/creationals/factory
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -Isrc/creationals/singleton -Isrc/creationals -Isrc/creationals/singleton -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/creationals/factory/SweetCoffee.o src/creationals/factory/SweetCoffee.cpp
-
-${OBJECTDIR}/src/creationals/factory/merda.o: src/creationals/factory/merda.cpp
-	${MKDIR} -p ${OBJECTDIR}/src/creationals/factory
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -Isrc/creationals/singleton -Isrc/creationals -Isrc/creationals/singleton -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/creationals/factory/merda.o src/creationals/factory/merda.cpp
 
 ${OBJECTDIR}/src/creationals/singleton/SingletonSun.o: src/creationals/singleton/SingletonSun.cpp
 	${MKDIR} -p ${OBJECTDIR}/src/creationals/singleton

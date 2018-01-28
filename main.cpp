@@ -2,7 +2,6 @@
 #include <string>
 #include <iostream>
 
-
 #include "src/creationals/singleton/SingletonSun.h"
 #include "src/creationals/factory/CoffeeMachine.cpp"
 

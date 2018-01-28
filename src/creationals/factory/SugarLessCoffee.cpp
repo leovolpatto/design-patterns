@@ -1,4 +1,6 @@
-class SweetLessCoffee : public AbstractCoffee {
+#include <iostream>
+
+class SugarLessCoffee : public AbstractCoffee {
 public:
 
     void getCoffeeType() {
